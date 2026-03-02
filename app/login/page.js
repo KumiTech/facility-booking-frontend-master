@@ -72,24 +72,34 @@ export default function LoginPage() {
       >
         {/* Logo */}
         <div style={{ textAlign: "center", marginBottom: "2rem" }}>
-          <Image
-            src="/logo.png"
-            alt="Logo"
-            width={48}
-            height={48}
-            style={{ borderRadius: "12px", marginBottom: "1rem" }}
-          />
-          <h1
+          <div
             style={{
-              color: "#fff",
-              fontSize: "1.75rem",
-              fontWeight: "800",
-              letterSpacing: "-0.02em",
-              margin: 0,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "12px",
+              marginBottom: "0.75rem",
             }}
           >
-            Welcome back
-          </h1>
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={48}
+              height={48}
+              style={{ borderRadius: "12px" }}
+            />
+            <h1
+              style={{
+                color: "#fff",
+                fontSize: "1.75rem",
+                fontWeight: "800",
+                letterSpacing: "-0.02em",
+                margin: 0,
+              }}
+            >
+              Welcome back
+            </h1>
+          </div>
           <p
             style={{
               color: "rgba(255,255,255,0.4)",
