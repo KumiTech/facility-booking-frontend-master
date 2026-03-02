@@ -31,7 +31,7 @@ export default function LoginPage() {
           role: res.data.role,
         }),
       );
-      router.push("/facilities");
+      router.push("/");
     } catch (err) {
       setError(err.response?.data || "Login failed. Please try again.");
     } finally {
